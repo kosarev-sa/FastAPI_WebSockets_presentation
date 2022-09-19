@@ -1,1 +1,1 @@
-web: hypercorn main:app --worker-class trio --host 0.0.0.0 --port $PORT
+web: hypercorn main:app --worker-class trio --bind "0.0.0.0:80"
