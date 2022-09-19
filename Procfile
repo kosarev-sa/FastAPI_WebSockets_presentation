@@ -1,1 +1,1 @@
-web: hypercorn main:app --worker-class trio --bind "0.0.0.0:$PORT"
+web: gunicorn -w -k uvicorn.workers.UvicornWorker main:app
