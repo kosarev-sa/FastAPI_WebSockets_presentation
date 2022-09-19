@@ -1,1 +1,1 @@
-web: gunicorn main:app
+web: hypercorn main:app --worker-class trio
