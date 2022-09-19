@@ -1,0 +1,14 @@
+body {
+      background: url(./Jobs.png) no-repeat;
+      background-position: top right;
+      color: gray;
+      text-shadow: 1px 1px 1px #000;
+}
+li {
+      list-style-type: none; /* Убираем маркеры */
+}
+input.text {
+       width:  450px;
+       height: 30px;
+       font-size: 14px;
+}
