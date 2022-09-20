@@ -1,1 +1,1 @@
-web: hypercorn main:app --worker-class trio --bind "0.0.0.0:80"
+web: gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app
