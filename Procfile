@@ -1,1 +1,1 @@
-web: hypercorn main:app --worker-class trio
+web: gunicorn -w 2 -k uvicorn.workers.UvicornWorker main:app
