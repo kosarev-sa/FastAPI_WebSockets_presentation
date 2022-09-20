@@ -1,4 +1,9 @@
-let ws = new WebSocket("ws://websocketsjobs.herokuapp.com/ws");
+var url= window.location.host + window.location.pathname + 'ws'
+  if (window.location.protocol === 'http:') {
+    let ws = new WebSocket("ws://" + url);
+  } else {
+    let ws = new WebSocket("wss://" + url);
+  };
 
     ws.onmessage = function(event) {
         let messages = document.getElementById('messages')
