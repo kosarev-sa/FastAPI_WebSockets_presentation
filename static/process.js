@@ -1,8 +1,8 @@
 var url= window.location.host + window.location.pathname + 'ws'
   if (window.location.protocol === 'http:') {
-    let ws = new WebSocket("ws://" + url);
+    var ws = new WebSocket("ws://" + url);
   } else {
-    let ws = new WebSocket("wss://" + url);
+    var ws = new WebSocket("wss://" + url);
   };
 
     ws.onmessage = function(event) {
