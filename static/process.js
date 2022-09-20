@@ -1,4 +1,4 @@
-let ws = new WebSocket("ws://0.0.0.0:$PORT/ws");
+let ws = new WebSocket("ws://94.25.185.252:0/ws");
 
     ws.onmessage = function(event) {
         let messages = document.getElementById('messages')
